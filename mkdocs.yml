@@ -1,0 +1,124 @@
+site_name: Architecture & System Design
+site_description: A practical knowledge base for system design, distributed systems, software architecture, and cloud architecture.
+site_author: Sumanth Thallapelly
+site_url: https://sthallapelly.github.io/architecture-system-design/
+
+repo_name: sthallapelly/architecture-system-design
+repo_url: https://github.com/sthallapelly/architecture-system-design
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Learning Tracks:
+      - Track 1 — System Design Fundamentals:
+          - Overview: fundamentals/index.md
+          - Topic Template: fundamentals/topic-template.md
+          - Requirements & Constraints: fundamentals/requirements.md
+          - Scalability, Latency & Throughput: fundamentals/scalability-latency-throughput.md
+          - Availability & Reliability: fundamentals/availability-reliability.md
+          - Consistency Models: fundamentals/consistency.md
+
+      - Track 2 — Distributed Systems:
+          - Overview: distributed-systems/index.md
+
+      - Track 3 — Microservices:
+          - Overview: microservices/index.md
+
+      - Track 4 — Event-Driven Architecture:
+          - Overview: event-driven/index.md
+
+      - Track 5 — Messaging Systems:
+          - Overview: messaging/index.md
+
+      - Track 6 — Data & Databases:
+          - Overview: databases/index.md
+
+      - Track 7 — Streaming Systems:
+          - Overview: streaming/index.md
+
+      - Track 8 — Caching:
+          - Overview: caching/index.md
+
+      - Track 9 — Reliability & Resilience:
+          - Overview: reliability/index.md
+
+      - Track 10 — Security Architecture:
+          - Overview: security/index.md
+
+      - Track 11 — Multi-Tenant Architecture:
+          - Overview: multi-tenancy/index.md
+
+      - Track 12 — GenAI Architecture:
+          - Overview: genai/index.md
+
+  - Architecture Patterns:
+      - Overview: patterns/index.md
+      - Pattern Template: patterns/pattern-template.md
+      - Transactional Outbox: patterns/transactional-outbox.md
+      - Saga: patterns/saga.md
+      - Circuit Breaker: patterns/circuit-breaker.md
+      - Bulkhead: patterns/bulkhead.md
+      - Strangler Fig: patterns/strangler.md
+      - CQRS: patterns/cqrs.md
+
+  - System Design Problems:
+      - Overview: problems/index.md
+      - Problem Template: problems/problem-template.md
+      - Payment System: problems/payment-system.md
+      - Notification System: problems/notification-system.md
+      - Distributed Cache: problems/distributed-cache.md
+      - Order Management: problems/order-management.md
+
+  - Deep Dives:
+      - Overview: deep-dives/index.md
+
+  - Reference:
+      - Architecture Checklist: reference/architecture-checklist.md
+      - Interview Checklist: reference/interview-checklist.md
+      - Glossary: reference/glossary.md
+
+extra:
+  generator: false
+
+copyright: "Architecture & System Design Learning Journey"
