@@ -1,4 +1,4 @@
-# Track 2 — Distributed Systems
+# Distributed Systems
 
 ## Topics
 

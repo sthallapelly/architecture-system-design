@@ -1,4 +1,4 @@
-# Track 9 — Reliability & Resilience
+# Reliability & Resilience
 
 ## Topics
 

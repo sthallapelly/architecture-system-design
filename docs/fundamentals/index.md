@@ -1,4 +1,4 @@
-# Track 1 — System Design Fundamentals
+# System Design Fundamentals
 
 This track establishes the reasoning framework used throughout the rest of the curriculum.
 

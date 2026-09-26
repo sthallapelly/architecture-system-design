@@ -1,6 +1,6 @@
 # Deep Dives
 
-Not every learning topic needs a long article.
+Not every architecture topic needs a long-form article.
 
 Use this section for subjects where deeper treatment is useful for:
 

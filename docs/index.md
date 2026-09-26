@@ -1,105 +1,88 @@
 # Architecture & System Design
 
-> **From cloud implementation knowledge to architecture reasoning.**
+> **Architecture concepts, design patterns, trade-offs, and practical system design decisions.**
 
-This site is a continuously evolving learning and reference guide covering system design, distributed systems, software architecture, reliability, data, security, and modern AI systems.
+This site is my public architecture knowledge base: a structured collection of concepts, patterns, design approaches, and engineering decisions across modern software and cloud systems. The focus is not on individual technologies in isolation, but on **why an architecture works, where it fails, how it scales, and what trade-offs shape the final design**.
 
-## Learning philosophy
+The material reflects the areas I work with and explore as a solutions and cloud architect, connecting system-design fundamentals with distributed systems, cloud architecture, security, reliability, data platforms, and AI-enabled applications.
 
-The objective is not to memorize architecture patterns.
+## Architecture domains
 
-The objective is to develop the ability to reason about:
+| Domain | Focus |
+|---|---|
+| **System Design Fundamentals** | Requirements, constraints, scalability, latency, throughput, availability, reliability, and consistency |
+| **Distributed Systems** | Coordination, state, consistency, partitioning, replication, failure handling, and distributed communication |
+| **Microservices** | Service boundaries, APIs, data ownership, communication, deployment, and operational trade-offs |
+| **Event-Driven Architecture** | Events, asynchronous workflows, decoupling, delivery semantics, and eventual consistency |
+| **Messaging Systems** | Queues, pub/sub, brokers, ordering, retries, idempotency, and message delivery |
+| **Data & Databases** | Data modeling, persistence choices, replication, partitioning, transactions, and database scaling |
+| **Streaming Systems** | Event streams, real-time processing, partitioning, consumer models, and stream architecture |
+| **Caching** | Cache patterns, consistency, invalidation, distributed caching, and performance trade-offs |
+| **Reliability & Resilience** | Failure isolation, recovery, redundancy, graceful degradation, and resilience patterns |
+| **Security Architecture** | Identity, access control, network security, encryption, isolation, and defense in depth |
+| **Multi-Tenant Architecture** | Tenant isolation, data models, noisy-neighbor control, quotas, residency, and scaling models |
+| **GenAI Architecture** | Foundation models, RAG, vector search, knowledge bases, agents, guardrails, and AI application architecture |
 
-- requirements and constraints
-- scale
-- consistency
-- failure
-- state
-- communication
-- data
-- security
-- reliability
-- operational complexity
-- cost
-- evolution
-- architectural trade-offs
+## Architecture perspective
 
-### Core mental model
+Good architecture connects **business goals, technical constraints, operational realities, and long-term evolution**. A design is rarely defined by a single pattern or product; it emerges from a sequence of decisions and trade-offs.
+
+A consistent reasoning model used throughout this site is:
 
 ```text
-Requirements
-     ↓
-Constraints
-     ↓
-Scale & Capacity
-     ↓
-Interfaces & Data
-     ↓
-Architecture
-     ↓
-Consistency & State
-     ↓
-Failure Modes
-     ↓
-Resilience
-     ↓
-Security
-     ↓
-Observability
-     ↓
-Scaling
-     ↓
-DR / Recovery
-     ↓
-Evolution
-     ↓
-Trade-offs
+Business & Functional Requirements
+              ↓
+Constraints & Quality Attributes
+              ↓
+Scale, Capacity & Traffic Characteristics
+              ↓
+Interfaces, Data & Service Boundaries
+              ↓
+Architecture & Communication Model
+              ↓
+State, Consistency & Transactions
+              ↓
+Failure Modes & Resilience
+              ↓
+Security & Isolation
+              ↓
+Observability & Operations
+              ↓
+Scaling & Recovery Strategy
+              ↓
+Evolution & Migration
+              ↓
+Trade-offs & Architecture Decisions
 ```
 
-## Learning tracks
+## What you'll find here
 
-| Track | Focus |
-|---|---|
-| 1 | System Design Fundamentals |
-| 2 | Distributed Systems |
-| 3 | Microservices |
-| 4 | Event-Driven Architecture |
-| 5 | Messaging Systems |
-| 6 | Data & Databases |
-| 7 | Streaming Systems |
-| 8 | Caching |
-| 9 | Reliability & Resilience |
-| 10 | Security Architecture |
-| 11 | Multi-Tenant Architecture |
-| 12 | GenAI Architecture |
+### Architecture concepts
 
-## Content types
-
-### Learning notes
-
-Short, structured explanations designed for future reference.
+Concise references that explain important system-design and distributed-systems concepts, including the architectural problem, mechanics, design implications, and trade-offs.
 
 ### Architecture patterns
 
-Reusable patterns, their problem context, mechanics, limitations, and trade-offs.
+Reusable patterns examined in context: what problem they solve, how they work, where they fit, their limitations, and the operational complexity they introduce.
 
-### System-design problems
+### System design problems
 
-Progressive design exercises that start with requirements and introduce scale and failure scenarios.
+End-to-end design scenarios that connect requirements, scale, APIs, data, distributed communication, failure handling, security, observability, and architectural trade-offs.
 
 ### Deep dives
 
-Selected topics expanded into long-form architecture articles.
+Longer architecture discussions for topics where the implementation choices, failure modes, or trade-offs deserve more detailed treatment.
 
-## Recommended learning rhythm
+## Design principles
 
-Target **1–2 meaningful topics or design problems per week**.
+The recurring questions behind the material on this site are simple but important:
 
-A typical cycle:
+- What problem are we solving, and what constraints actually matter?
+- What happens when traffic, data volume, or tenant count grows significantly?
+- Where does state live, and what consistency guarantees are required?
+- What happens when a dependency, region, network path, or service fails?
+- How is security enforced across identity, network, application, and data boundaries?
+- How will the system be observed, operated, recovered, and evolved?
+- Which trade-offs are we accepting, and why?
 
-1. Learn the concept.
-2. Work through failure scenarios.
-3. Solve a design problem.
-4. Capture concise notes.
-5. Identify important trade-offs.
-6. Promote particularly valuable topics into a deep dive.
+The objective is to make those decisions explicit and connect architecture theory to practical system design.

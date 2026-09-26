@@ -1,4 +1,4 @@
-# Track 8 — Caching
+# Caching
 
 ## Topics
 

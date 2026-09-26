@@ -1,4 +1,4 @@
-# Track 11 — Multi-Tenant Architecture
+# Multi-Tenant Architecture
 
 ## Topics
 

@@ -1,4 +1,4 @@
-# Track 4 — Event-Driven Architecture
+# Event-Driven Architecture
 
 ## Topics
 

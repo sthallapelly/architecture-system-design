@@ -1,4 +1,4 @@
-# Track 6 — Data & Database Architecture
+# Data & Database Architecture
 
 ## Topics
 

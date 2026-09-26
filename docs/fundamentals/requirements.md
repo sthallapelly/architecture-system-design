@@ -54,7 +54,7 @@ Take a vague requirement:
 
 Turn it into at least 10 explicit functional and non-functional requirements.
 
-## Questions for deeper study
+## Architecture questions
 
 1. Which requirements are mandatory?
 2. Which requirements are negotiable?

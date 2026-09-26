@@ -42,7 +42,7 @@ Release Inventory
 Cancel Order
 ```
 
-## Questions for deeper study
+## Architecture questions
 
 1. What does compensation actually guarantee?
 2. When is orchestration preferable?

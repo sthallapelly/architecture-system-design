@@ -1,4 +1,4 @@
-# Track 5 — Messaging Systems
+# Messaging Systems
 
 ## Topics
 

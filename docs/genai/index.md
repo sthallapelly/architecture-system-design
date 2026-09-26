@@ -1,4 +1,4 @@
-# Track 12 — GenAI Architecture
+# GenAI Architecture
 
 ## Topics
 

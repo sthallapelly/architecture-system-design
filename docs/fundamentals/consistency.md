@@ -7,7 +7,7 @@
 
 After data changes in one location, **when and where must other readers observe that change?**
 
-## Concepts to study
+## Key concepts
 
 - Strong consistency
 - Eventual consistency

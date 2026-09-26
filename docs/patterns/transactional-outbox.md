@@ -35,7 +35,7 @@ Outbox does not automatically provide exactly-once processing.
 
 Consumers still need to handle duplicate delivery safely.
 
-## Questions for deeper study
+## Architecture questions
 
 1. What happens if the publisher crashes after publishing?
 2. How is the outbox cleaned up?

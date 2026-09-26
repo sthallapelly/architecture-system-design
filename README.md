@@ -1,8 +1,8 @@
 # Architecture & System Design
 
-A practical, continuously evolving knowledge base for system design, distributed systems, software architecture, and cloud architecture.
+A public architecture knowledge base covering system design, distributed systems, software architecture, cloud architecture, security, reliability, data platforms, and AI-enabled applications.
 
-The goal is to build architecture reasoning skills—not just memorize technologies or interview answers.
+The repository focuses on architectural reasoning: understanding the problem, constraints, scale, failure modes, operational characteristics, and trade-offs behind a design rather than treating technologies as isolated building blocks.
 
 ## Structure
 
@@ -19,30 +19,15 @@ The goal is to build architecture reasoning skills—not just memorize technolog
 - `docs/multi-tenancy/` — multi-tenant architecture
 - `docs/genai/` — GenAI architecture
 - `docs/patterns/` — reusable architecture patterns
-- `docs/problems/` — system-design problems
-- `docs/deep-dives/` — selected long-form architecture articles
+- `docs/problems/` — system-design scenarios
+- `docs/deep-dives/` — long-form architecture discussions
+- `docs/reference/` — architecture checklists, glossary, and reference material
 
-## Learning method
+## Content model
 
-Each topic follows a repeatable model:
+Topics generally examine the architectural problem, core concepts, design mechanics, appropriate use cases, failure scenarios, scale considerations, security and operational implications, alternatives, and trade-offs. Cloud services are mapped to these concepts where useful, while keeping the architectural reasoning technology-independent first.
 
-1. Problem
-2. Concept
-3. Why it matters
-4. How it works
-5. When to use it
-6. When not to use it
-7. Architecture
-8. Failure scenarios
-9. Scale considerations
-10. Trade-offs
-11. AWS/cloud mapping
-12. Interview questions
-13. Design problem
-14. Key takeaways
-15. References
-
-The repository is intentionally technology-independent first. Cloud services are mapped after the architectural reasoning is established.
+Template files remain in the repository as authoring aids, but they are intentionally excluded from the public site navigation.
 
 ## Local preview
 
@@ -57,15 +42,6 @@ Open the local URL shown by MkDocs.
 
 ## GitHub Pages
 
-The repository includes a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+The repository includes a GitHub Actions workflow in `.github/workflows/deploy.yml` that builds the MkDocs site and deploys it to GitHub Pages on pushes to `main`.
 
-After pushing the repository to GitHub:
-
-1. Open **Settings → Pages**.
-2. Set the source to **GitHub Actions**.
-3. Push changes to `main`.
-4. The workflow builds and deploys the documentation.
-
-## Status
-
-This is the starter structure. Content will be added progressively as the learning program advances.
+Public site: `https://sthallapelly.github.io/architecture-system-design/`

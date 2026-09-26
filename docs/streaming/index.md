@@ -1,4 +1,4 @@
-# Track 7 — Streaming Systems
+# Streaming Systems
 
 ## Topics
 

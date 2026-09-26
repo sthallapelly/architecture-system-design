@@ -1,4 +1,4 @@
-# Track 3 — Microservices Architecture
+# Microservices Architecture
 
 ## Topics
 

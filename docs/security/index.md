@@ -1,4 +1,4 @@
-# Track 10 — Security Architecture
+# Security Architecture
 
 ## Topics
 
