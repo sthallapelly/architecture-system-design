@@ -1,20 +1,11 @@
 # Deep Dives
 
-Not every architecture topic needs a long-form article.
+In-depth explorations of architecture and system design topics, focusing on practical design decisions, trade-offs, scalability, reliability, security, and operational considerations.
 
-Use this section for subjects where deeper treatment is useful for:
+These articles go beyond individual concepts and patterns to examine how multiple architectural concerns come together when designing real-world systems.
 
-- architectural reference
-- interviews
-- portfolio material
-- teaching others
-- real-world architecture discussions
+## Architecture Deep Dives
 
-Potential deep dives:
+Detailed architecture analyses will be added here as they are published.
 
-- Designing Reliable Event-Driven Systems
-- Transactional Outbox in Distributed Systems
-- Multi-Region Architecture
-- Distributed Transactions
-- Building a Multi-Tenant Platform
-- Enterprise RAG Architecture
+In the meantime, explore the [Architecture Concepts](../fundamentals/) and [Architecture Patterns](../patterns/) sections for focused discussions of individual design principles and patterns.
