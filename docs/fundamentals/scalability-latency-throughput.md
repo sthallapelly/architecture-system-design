@@ -1,8 +1,5 @@
 # Scalability, Latency & Throughput
 
-> **Status:** 🟡 Starter note  
-> **Track:** System Design Fundamentals
-
 ## Core distinction
 
 - **Latency:** How long one operation takes.
@@ -23,7 +20,7 @@
 
 ## Capacity estimation
 
-Practice translating:
+Capacity estimates connect demand to resource requirements:
 
 ```text
 Users
@@ -39,7 +36,7 @@ Peak RPS
 Compute / storage / network requirements
 ```
 
-## Design exercise
+## Design scenario {#design-exercise}
 
 Design an API that must support:
 

@@ -1,9 +1,6 @@
-# Design an Order Management System
+# Order Management {#design-an-order-management-system}
 
-> **Status:** 🟡 Starter problem  
-> **Difficulty:** Advanced
-
-Design an order workflow involving:
+The scenario spans an order workflow involving:
 
 ```text
 Order
@@ -17,7 +14,7 @@ Shipping
 Fulfillment
 ```
 
-Then introduce:
+## Failure scenarios
 
 - payment failure
 - inventory shortage

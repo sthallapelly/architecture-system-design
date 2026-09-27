@@ -1,11 +1,8 @@
-# Design a Notification System
+# Notification System {#design-a-notification-system}
 
-> **Status:** 🟡 Starter problem  
-> **Difficulty:** Intermediate
+The scenario concerns a notification platform supporting email, SMS, and push notifications.
 
-Design a notification platform supporting email, SMS, and push notifications.
-
-Explore:
+## Design considerations
 
 - millions of notifications/day
 - priority

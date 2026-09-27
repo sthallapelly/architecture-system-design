@@ -1,6 +1,6 @@
 # System Design Fundamentals
 
-This track establishes the reasoning framework used throughout the rest of the curriculum.
+System design connects business requirements to measurable guarantees, capacity constraints, and failure behavior. These fundamentals provide the basis for comparing architecture options.
 
 ## Core topics
 
@@ -25,12 +25,11 @@ This track establishes the reasoning framework used throughout the rest of the c
 - Backpressure
 - Graceful degradation
 
-## Recommended progression
+## Architecture concepts {#recommended-progression}
 
-1. Requirements & Constraints
-2. Scalability, Latency & Throughput
-3. Availability & Reliability
-4. Consistency Models
-5. Failure handling and resilience
+- [Requirements & Constraints](requirements.md)
+- [Scalability, Latency & Throughput](scalability-latency-throughput.md)
+- [Availability & Reliability](availability-reliability.md)
+- [Consistency Models](consistency.md)
 
-The goal is to understand the reasoning behind these concepts before mapping them to cloud services.
+[Reliability & Resilience](../reliability/index.md) covers failure handling and recovery concerns that cut across these decisions.

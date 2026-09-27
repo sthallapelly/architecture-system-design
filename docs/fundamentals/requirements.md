@@ -1,9 +1,6 @@
 # Requirements & Constraints
 
-> **Status:** 🟡 Starter note  
-> **Track:** System Design Fundamentals
-
-This topic will establish how to turn an ambiguous system-design question into explicit engineering requirements.
+Explicit engineering requirements turn an ambiguous system-design request into constraints that can guide architecture decisions.
 
 ## Questions to answer
 
@@ -46,13 +43,13 @@ Before designing components, clarify:
 
 > **Who uses the system, what do they need, at what scale, with what reliability and latency, under what constraints?**
 
-## Design exercise
+## Design scenario {#design-exercise}
 
 Take a vague requirement:
 
 > "Design an order platform."
 
-Turn it into at least 10 explicit functional and non-functional requirements.
+The architecture depends on explicit functional requirements and measurable non-functional requirements.
 
 ## Architecture questions
 

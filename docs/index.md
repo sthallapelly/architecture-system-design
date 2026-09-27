@@ -12,16 +12,13 @@ The material reflects the areas I work with and explore as a solutions and cloud
 |---|---|
 | **System Design Fundamentals** | Requirements, constraints, scalability, latency, throughput, availability, reliability, and consistency |
 | **Distributed Systems** | Coordination, state, consistency, partitioning, replication, failure handling, and distributed communication |
-| **Microservices** | Service boundaries, APIs, data ownership, communication, deployment, and operational trade-offs |
-| **Event-Driven Architecture** | Events, asynchronous workflows, decoupling, delivery semantics, and eventual consistency |
-| **Messaging Systems** | Queues, pub/sub, brokers, ordering, retries, idempotency, and message delivery |
-| **Data & Databases** | Data modeling, persistence choices, replication, partitioning, transactions, and database scaling |
-| **Streaming Systems** | Event streams, real-time processing, partitioning, consumer models, and stream architecture |
-| **Caching** | Cache patterns, consistency, invalidation, distributed caching, and performance trade-offs |
+| **Cloud Architecture** | Cloud design, hybrid connectivity, network boundaries, multi-account architecture, identity, and operational responsibility |
+| **Application Architecture** | Service boundaries, microservices, multi-tenancy, data ownership, isolation, and operational trade-offs |
+| **Integration & Event-Driven Architecture** | Events, messaging, streaming, delivery semantics, ordering, and distributed workflows |
+| **Data Architecture** | Data modeling, persistence, transactions, replication, partitioning, and caching |
 | **Reliability & Resilience** | Failure isolation, recovery, redundancy, graceful degradation, and resilience patterns |
 | **Security Architecture** | Identity, access control, network security, encryption, isolation, and defense in depth |
-| **Multi-Tenant Architecture** | Tenant isolation, data models, noisy-neighbor control, quotas, residency, and scaling models |
-| **GenAI Architecture** | Foundation models, RAG, vector search, knowledge bases, agents, guardrails, and AI application architecture |
+| **AI Architecture** | Foundation models, RAG, vector search, agents, guardrails, and AI application architecture |
 
 ## Architecture perspective
 
@@ -65,13 +62,17 @@ Concise references that explain important system-design and distributed-systems 
 
 Reusable patterns examined in context: what problem they solve, how they work, where they fit, their limitations, and the operational complexity they introduce.
 
-### System design problems
+### System design case studies {#system-design-problems}
 
-End-to-end design scenarios that connect requirements, scale, APIs, data, distributed communication, failure handling, security, observability, and architectural trade-offs.
+Architecture scenarios organized around requirements, scale, APIs, data, failure handling, security, and operational trade-offs. See the [System Design Case Studies](problems/index.md).
 
 ### Deep dives
 
 Longer architecture discussions for topics where the implementation choices, failure modes, or trade-offs deserve more detailed treatment.
+
+### Labs
+
+Practical implementation and validation of architecture designs. The [AWS private Systems Manager connectivity lab](labs/aws/private-systems-manager-connectivity-direct-connect.md) establishes a hybrid management-connectivity problem and its validation criteria.
 
 ## Design principles
 

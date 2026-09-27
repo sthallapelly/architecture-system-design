@@ -8,4 +8,4 @@ These articles go beyond individual concepts and patterns to examine how multipl
 
 Detailed architecture analyses will be added here as they are published.
 
-In the meantime, explore the [Architecture Concepts](../fundamentals/) and [Architecture Patterns](../patterns/) sections for focused discussions of individual design principles and patterns.
+In the meantime, explore the [Architecture Concepts](../fundamentals/index.md) and [Architecture Patterns](../patterns/index.md) sections for focused discussions of individual design principles and patterns.

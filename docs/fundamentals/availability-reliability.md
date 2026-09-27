@@ -1,8 +1,5 @@
 # Availability & Reliability
 
-> **Status:** 🟡 Starter note  
-> **Track:** System Design Fundamentals
-
 ## Distinguish the terms
 
 **Availability** asks whether the service is usable when requested.
@@ -36,7 +33,7 @@
 5. What data can be lost?
 6. How quickly must service recover?
 
-## Design exercise
+## Design scenario {#design-exercise}
 
 Design a service with a 99.99% availability target and an RPO of five minutes.
 

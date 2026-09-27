@@ -11,7 +11,6 @@ theme:
   language: en
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -47,6 +46,14 @@ markdown_extensions:
 plugins:
   - search
 
+# Keep internal authoring resources and reference material out of the public build.
+exclude_docs: |
+  /reference/
+  /contributing/
+  /fundamentals/topic-template.md
+  /patterns/pattern-template.md
+  /problems/problem-template.md
+
 nav:
   - Home: index.md
 
@@ -61,23 +68,28 @@ nav:
       - Distributed Systems:
           - Overview: distributed-systems/index.md
 
-      - Microservices:
-          - Overview: microservices/index.md
+      - Cloud Architecture:
+          - Overview: cloud/index.md
 
-      - Event-Driven Architecture:
-          - Overview: event-driven/index.md
+      - Application Architecture:
+          - Microservices:
+              - Overview: microservices/index.md
+          - Multi-Tenant Architecture:
+              - Overview: multi-tenancy/index.md
 
-      - Messaging Systems:
-          - Overview: messaging/index.md
+      - Integration & Event-Driven Architecture:
+          - Event-Driven Architecture:
+              - Overview: event-driven/index.md
+          - Messaging Systems:
+              - Overview: messaging/index.md
+          - Streaming Systems:
+              - Overview: streaming/index.md
 
-      - Data & Databases:
-          - Overview: databases/index.md
-
-      - Streaming Systems:
-          - Overview: streaming/index.md
-
-      - Caching:
-          - Overview: caching/index.md
+      - Data Architecture:
+          - Data & Databases:
+              - Overview: databases/index.md
+          - Caching:
+              - Overview: caching/index.md
 
       - Reliability & Resilience:
           - Overview: reliability/index.md
@@ -85,10 +97,7 @@ nav:
       - Security Architecture:
           - Overview: security/index.md
 
-      - Multi-Tenant Architecture:
-          - Overview: multi-tenancy/index.md
-
-      - GenAI Architecture:
+      - AI Architecture:
           - Overview: genai/index.md
 
   - Architecture Patterns:
@@ -100,7 +109,7 @@ nav:
       - Strangler Fig: patterns/strangler.md
       - CQRS: patterns/cqrs.md
 
-  - System Design Problems:
+  - System Design Case Studies:
       - Overview: problems/index.md
       - Payment System: problems/payment-system.md
       - Notification System: problems/notification-system.md
@@ -110,10 +119,9 @@ nav:
   - Deep Dives:
       - Overview: deep-dives/index.md
 
-  - Reference:
-      - Architecture Checklist: reference/architecture-checklist.md
-      - Interview Checklist: reference/interview-checklist.md
-      - Glossary: reference/glossary.md
+#   - Labs:
+#       - AWS:
+#           - Private Systems Manager Connectivity over Direct Connect: labs/aws/private-systems-manager-connectivity-direct-connect.md
 
 extra:
   generator: false

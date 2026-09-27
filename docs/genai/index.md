@@ -1,4 +1,4 @@
-# GenAI Architecture
+# AI Architecture {#genai-architecture}
 
 ## Topics
 

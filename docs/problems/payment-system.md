@@ -1,11 +1,8 @@
-# Design a Payment System
-
-> **Status:** 🟡 Starter problem  
-> **Difficulty:** Advanced
+# Payment System {#design-a-payment-system}
 
 ## Problem
 
-Design a payment API that must safely process customer payments despite retries, timeouts, duplicate requests, and downstream failures.
+The case concerns a payment API that must safely process customer payments despite retries, timeouts, duplicate requests, and downstream failures.
 
 ## Initial requirements
 
@@ -15,9 +12,7 @@ Design a payment API that must safely process customer payments despite retries,
 - External payment providers may timeout or become unavailable.
 - The system must provide an audit trail.
 
-## Do not jump directly to implementation.
-
-First determine:
+## Architecture decisions {#do-not-jump-directly-to-implementation}
 
 1. Functional requirements
 2. Non-functional requirements
@@ -28,7 +23,7 @@ First determine:
 7. Transaction boundaries
 8. Reconciliation strategy
 
-## Follow-up scenarios
+## Failure scenarios {#follow-up-scenarios}
 
 - Client times out but payment succeeds.
 - Payment provider returns an unknown result.
@@ -38,7 +33,7 @@ First determine:
 - Payment provider is unavailable for 30 minutes.
 - Regional failure occurs during payment processing.
 
-## Key concepts likely involved
+## Relevant architecture concepts {#key-concepts-likely-involved}
 
 - Idempotency
 - Distributed transactions

@@ -19,9 +19,11 @@ The repository focuses on architectural reasoning: understanding the problem, co
 - `docs/multi-tenancy/` — multi-tenant architecture
 - `docs/genai/` — GenAI architecture
 - `docs/patterns/` — reusable architecture patterns
-- `docs/problems/` — system-design scenarios
+- `docs/problems/` — system design case studies
 - `docs/deep-dives/` — long-form architecture discussions
-- `docs/reference/` — architecture checklists, glossary, and reference material
+- `docs/cloud/` — cloud architecture
+- `docs/labs/` — architecture implementation and validation
+- `docs/reference/` — internal reference material (excluded from the public site)
 
 ## Content model
 

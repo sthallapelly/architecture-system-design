@@ -1,8 +1,5 @@
 # Consistency Models
 
-> **Status:** 🟡 Starter note  
-> **Track:** System Design Fundamentals
-
 ## Core question
 
 After data changes in one location, **when and where must other readers observe that change?**
@@ -30,7 +27,7 @@ Ask:
 
 > "What consistency guarantees does this business operation actually require?"
 
-## Design exercise
+## Design scenario {#design-exercise}
 
 Design a globally distributed customer-profile service.
 

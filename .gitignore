@@ -3,3 +3,7 @@ __pycache__/
 site/
 .DS_Store
 *.pyc
+AGENTS.md
+myprompts.md
+docs/contributing/content-guidelines.md
+docs/contributing/writing-style.md

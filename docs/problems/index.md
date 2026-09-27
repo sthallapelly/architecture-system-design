@@ -1,19 +1,10 @@
-# System Design Problems
+# System Design Case Studies {#system-design-problems}
 
-This section contains complete design exercises.
+System design requires decisions across service boundaries, data ownership, consistency, and failure recovery. These case studies establish concrete system contexts and the requirements and trade-offs that shape their architectures.
 
-Each problem should progress through:
+- [Payment System](payment-system.md) — Payment correctness under retries, uncertain outcomes, and provider failures.
+- [Notification System](notification-system.md) — Delivery across channels with provider limits, user preferences, and duplicate processing.
+- [Distributed Cache](distributed-cache.md) — Partitioning, replication, eviction, and recovery under node failure.
+- [Order Management](order-management.md) — Coordination across inventory, payment, shipping, and fulfillment.
 
-1. Clarify requirements
-2. Estimate scale
-3. Define APIs/interfaces
-4. Model data
-5. Draw high-level architecture
-6. Identify bottlenecks
-7. Analyze failure modes
-8. Add resilience
-9. Address security
-10. Address observability
-11. Address DR
-12. Discuss trade-offs
-13. Evolve the design under new constraints
+The current pages define the design scenarios and key considerations; they do not present completed implementations or measured production results.

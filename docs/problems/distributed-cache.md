@@ -1,11 +1,8 @@
-# Design a Distributed Cache
+# Distributed Cache {#design-a-distributed-cache}
 
-> **Status:** 🟡 Starter problem  
-> **Difficulty:** Advanced
+The scenario concerns a distributed key-value cache.
 
-Design a distributed key-value cache.
-
-Explore:
+## Design considerations
 
 - partitioning
 - consistent hashing
