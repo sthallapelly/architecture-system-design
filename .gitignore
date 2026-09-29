@@ -5,5 +5,4 @@ site/
 *.pyc
 AGENTS.md
 myprompts.md
-docs/contributing/content-guidelines.md
-docs/contributing/writing-style.md
+docs/contributing/
