@@ -70,6 +70,8 @@ nav:
 
       - Cloud Architecture:
           - Overview: cloud/index.md
+          - Secure Private Administrative Access:
+                cloud/secure-private-administrative-access-aws.md
 
       - Application Architecture:
           - Microservices:
@@ -118,6 +120,8 @@ nav:
 
   - Deep Dives:
       - Overview: deep-dives/index.md
+      - Cloud Architecture:
+          - Private Access to AWS Systems Manager: deep-dives/cloud-architecture/private-access-aws-systems-manager-deep-dive.md
 
 #   - Labs:
 #       - AWS:
