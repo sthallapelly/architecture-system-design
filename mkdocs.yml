@@ -11,6 +11,7 @@ theme:
   language: en
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -42,6 +43,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+hooks:
+  - hooks/external_links.py
 
 plugins:
   - search
@@ -123,9 +127,8 @@ nav:
       - Cloud Architecture:
           - Private Access to AWS Systems Manager: deep-dives/cloud-architecture/private-access-aws-systems-manager-deep-dive.md
 
-#   - Labs:
-#       - AWS:
-#           - Private Systems Manager Connectivity over Direct Connect: labs/aws/private-systems-manager-connectivity-direct-connect.md
+  - Labs:
+      - Overview: labs/index.md
 
 extra:
   generator: false

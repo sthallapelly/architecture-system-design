@@ -145,9 +145,17 @@ For environments that require the **entire administrative path** to remain priva
 
 That end-to-end private path is where the design becomes more interesting—and is the subject of the corresponding deep dive.
 
+## Hands-on implementation
+
+The private RDS port-forwarding pattern described above was implemented and validated as a hands-on lab, including Terraform deployment, end-to-end database access, controlled failure experiments, and recovery.
+
+[View the lab](../labs/index.md#private-rds-access-with-systems-manager)
+
 ## Related AWS documentation
 
-- AWS Systems Manager — Session Manager
-- AWS Systems Manager — VPC endpoints and AWS PrivateLink
-- AWS Systems Manager — `ssmmessages` and `ec2messages` endpoint behavior
-- AWS Systems Manager — Starting port-forwarding sessions
+## Related AWS documentation
+
+1. [AWS Systems Manager — Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+2. [AWS Systems Manager — VPC endpoints and AWS PrivateLink](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html)
+3. [AWS Systems Manager — `ssmmessages` and `ec2messages` endpoint behavior](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)
+4. [AWS Systems Manager — Starting sessions and remote-host port forwarding](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html)

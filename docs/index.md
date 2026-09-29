@@ -2,9 +2,11 @@
 
 > **Architecture concepts, design patterns, trade-offs, and practical system design decisions.**
 
-This site is my public architecture knowledge base: a structured collection of concepts, patterns, design approaches, and engineering decisions across modern software and cloud systems. The focus is not on individual technologies in isolation, but on **why an architecture works, where it fails, how it scales, and what trade-offs shape the final design**.
+This site is my public architecture knowledge base: a structured collection of concepts, patterns, design approaches, and engineering decisions across modern software and cloud systems.
 
-The material reflects the areas I work with and explore as a solutions and cloud architect, connecting system-design fundamentals with distributed systems, cloud architecture, security, reliability, data platforms, and AI-enabled applications.
+The focus is not on technologies in isolation, but on **why an architecture works, where it fails, how it scales, and what trade-offs shape the final design**.
+
+The material connects system-design fundamentals with distributed systems, cloud architecture, security, reliability, data platforms, and AI-enabled applications.
 
 ## Architecture domains
 
@@ -52,27 +54,35 @@ Evolution & Migration
 Trade-offs & Architecture Decisions
 ```
 
-## What you'll find here
+## Explore the knowledge base
 
 ### Architecture concepts
 
-Concise references that explain important system-design and distributed-systems concepts, including the architectural problem, mechanics, design implications, and trade-offs.
+Focused references for important system-design and distributed-systems concepts, including the architectural problem, mechanics, design implications, and trade-offs.
 
 ### Architecture patterns
 
-Reusable patterns examined in context: what problem they solve, how they work, where they fit, their limitations, and the operational complexity they introduce.
+Reusable patterns examined in context: what problem they solve, where they fit, their limitations, and the operational complexity they introduce.
 
-### System design case studies {#system-design-problems}
+### System design case studies
 
-Architecture scenarios organized around requirements, scale, APIs, data, failure handling, security, and operational trade-offs. See the [System Design Case Studies](problems/index.md).
+End-to-end architecture scenarios organized around requirements, scale, APIs, data, failure handling, security, and operational trade-offs.
+
+[Explore System Design Case Studies →](problems/index.md)
 
 ### Deep dives
 
-Longer architecture discussions for topics where the implementation choices, failure modes, or trade-offs deserve more detailed treatment.
+Detailed architecture analyses for topics where network paths, implementation choices, failure modes, security boundaries, or trade-offs require deeper treatment.
+
+[Explore Deep Dives →](deep-dives/index.md)
 
 ### Labs
 
-Practical implementation and validation of architecture designs. The [AWS private Systems Manager connectivity lab](labs/aws/private-systems-manager-connectivity-direct-connect.md) establishes a hybrid management-connectivity problem and its validation criteria.
+Hands-on implementations used to validate architecture decisions, test failure scenarios, and connect design reasoning with working infrastructure.
+
+The Labs section acts as an index to the implementation repositories, where the Terraform, scripts, validation procedures, controlled failure experiments, and troubleshooting evidence are maintained.
+
+[Explore Labs →](labs/index.md)
 
 ## Design principles
 

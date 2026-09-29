@@ -306,16 +306,19 @@ The next step is to prove the pattern in a controlled environment.
 
 The accompanying lab uses a practical scenario:
 
-**Administrator → private Session Manager path → SSM-managed EC2 → private RDS**
+**Administrator → AWS Systems Manager → SSM-managed private EC2 → private RDS**
 
 The lab focuses on building the required controls, establishing remote-host port forwarding, deliberately breaking selected dependencies, and verifying which component is responsible for each failure.
 
-Direct Connect does not need to be reproduced in the lab. The same architectural responsibilities—private reachability, DNS, routing, endpoint access, IAM, and managed-node connectivity—can be demonstrated using a practical VPN-based environment while the enterprise Direct Connect variation remains an architecture concern.
+The lab does not attempt to reproduce enterprise Direct Connect connectivity. It validates the managed-node side of the design using Systems Manager interface endpoints and Private DNS, while the administrator uses the normal AWS service/API path. Enterprise-private administrator connectivity remains a separate architecture concern.
+
+[View the accompanying hands-on lab](../../labs/index.md#private-rds-access-with-systems-manager)
 
 ## AWS references
 
-- AWS Systems Manager — VPC endpoints and AWS PrivateLink
-- AWS Systems Manager — Session Manager
-- AWS Systems Manager — `ssmmessages` and `ec2messages` API behavior
-- Amazon Route 53 — VPC Resolver and hybrid DNS
-- AWS Systems Manager — Starting Session Manager sessions and remote-host port forwarding
+## Related AWS documentation
+
+1. [AWS Systems Manager — Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+2. [AWS Systems Manager — VPC endpoints and AWS PrivateLink](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html)
+3. [AWS Systems Manager — `ssmmessages` and `ec2messages` endpoint behavior](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)
+4. [AWS Systems Manager — Starting sessions and remote-host port forwarding](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html)
