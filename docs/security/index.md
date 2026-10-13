@@ -17,3 +17,10 @@
 - Defense in depth
 - Supply-chain security
 - Tenant isolation
+
+## Application & API Security
+
+Architecture concepts and design decisions for securing web applications,
+APIs, and service interactions.
+
+- Identity and Authorization Boundaries

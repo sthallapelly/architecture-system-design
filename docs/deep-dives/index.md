@@ -14,3 +14,8 @@ How Systems Manager connectivity changes when managed nodes use AWS PrivateLink,
 
 **Related:** [Secure Private Administrative Access on AWS](../cloud/secure-private-administrative-access-aws.md) · [Hands-on Lab](../labs/index.md)
 
+### AI Architecture
+
+**[Designing Production-Grade Enterprise RAG](ai-architecture/production-enterprise-rag.md)**
+
+An examination of enterprise RAG ingestion, hybrid retrieval, context assembly, authorization, revocation, evaluation, and AWS architecture decisions.

@@ -49,11 +49,19 @@ hooks:
 
 plugins:
   - search
+  - glightbox:
+      effect: zoom
+      zoomable: true
+      draggable: true
+      touchNavigation: true
+      auto_caption: true
+      caption_position: bottom
 
 # Keep internal authoring resources and reference material out of the public build.
 exclude_docs: |
   /reference/
   /contributing/
+  /assets/diagrams/security/*.md
   /fundamentals/topic-template.md
   /patterns/pattern-template.md
   /problems/problem-template.md
@@ -102,7 +110,22 @@ nav:
 
       - Security Architecture:
           - Overview: security/index.md
-
+          - Application & API Security:
+              - Overview: security/overview.md
+              - Identity and Authorization Boundaries:  security/content.md
+              - Scopes, Groups, and API Access Decisions: security/scopes-and-api-access.md
+              - Browser Token and Session Architecture: security/browser-session-architecture.md
+              - Gateway and API Enforcement Boundaries: security/gateway-api-enforcement.md
+              - JWT Validation, Introspection, and Revocation: security/token-validation-revocation.md
+              - Client Credentials and Machine Identity: security/client-credentials-machine-identity.md
+              - Client Secrets, Private Key JWT, and mTLS: security/client-authentication-methods.md
+              - Downstream Delegation and Token Exchange: security/downstream-delegation-token-exchange.md
+              - "Sender-Constrained Tokens: mTLS and DPoP": security/sender-constrained-tokens.md
+              - "Runtime Authorization: RBAC, ABAC, and ReBAC": security/runtime-authorization-models.md
+              - Policy Decision and Enforcement Architecture: security/policy-decision-enforcement.md
+              - Step-Up Authentication and Authentication Freshness: security/step-up-authentication.md
+              - Continuous Access Evaluation and Shared Signals: security/continuous-access-evaluation.md
+              - Phantom Token Architecture: security/phantom-token-architecture.md
       - AI Architecture:
           - Overview: genai/index.md
 
@@ -126,6 +149,13 @@ nav:
       - Overview: deep-dives/index.md
       - Cloud Architecture:
           - Private Access to AWS Systems Manager: deep-dives/cloud-architecture/private-access-aws-systems-manager-deep-dive.md
+      - AI Architecture:
+          - Production-Grade Enterprise RAG: deep-dives/ai-architecture/production-enterprise-rag.md
+      - Security Architecture:
+          - Claims Platform — Employee Access:
+             - Securing Employee Access to a Claims Payment Platform: deep-dives/security/claims-employee-access.md
+             - Architecture Decisions: deep-dives/security/claims-employee-access-adrs.md
+             - Machine Authentication ADR: deep-dives/security/claims-machine-authentication-adr.md
 
   - Labs:
       - Overview: labs/index.md
