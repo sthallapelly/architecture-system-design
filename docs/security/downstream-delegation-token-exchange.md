@@ -44,7 +44,7 @@ Forwarding an employee ID beside the machine token does not create delegation by
 
 ## The exchange flow
 
-![Payment-to-Ledger token exchange sequence](images/payment-ledger-token-exchange.png)
+![Payment-to-Ledger token exchange sequence](../assets/images/security/payment-ledger-token-exchange.png)
 
 1. **Validate the incoming request:** Payment API accepts the user token intended for it and authorizes the requested operation.
 2. **Authenticate the exchanging service:** Payment API presents its client authentication and the incoming subject token to the issuer.

@@ -16,7 +16,7 @@ A stolen bearer access token can be presented by another caller until the API re
 
 ## Compare the token-use models
 
-![Bearer, mTLS-bound, and DPoP-bound token use](images/sender-constrained-options.png)
+![Bearer, mTLS-bound, and DPoP-bound token use](../assets/images/security/sender-constrained-options.png)
 
 | Model | API requires | Suitable context | Added responsibility |
 | --- | --- | --- | --- |
@@ -73,7 +73,7 @@ Validate the proof type and allowed asymmetric algorithm, signature, token-key m
 
 ## Issuance and protected requests
 
-![DPoP token issuance and API verification](images/dpop-issuance-request-flow.png)
+![DPoP token issuance and API verification](../assets/images/security/dpop-issuance-request-flow.png)
 
 At issuance, the proof targets the token endpoint. At API use, a fresh proof targets the API method and URI and includes the access-token hash. These proofs are not interchangeable. DPoP may be used by public or confidential clients; confidential-client authentication remains a separate requirement.
 

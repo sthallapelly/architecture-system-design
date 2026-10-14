@@ -63,7 +63,7 @@ Portal logout, Okta SSO termination, and token revocation have separate effects.
 
 For claims access, propose **local checks everywhere plus uncached introspection for approval**, followed by current business authorization.
 
-![Token validation and approval authorization flow](images/token-validation-approval-flow.png)
+![Token validation and approval authorization flow](../assets/images/security/token-validation-approval-flow.png)
 
 Acceptance requires proven introspection credentials and measured approval latency/load. This is a case-specific trade-off, not a universal requirement for every API.
 

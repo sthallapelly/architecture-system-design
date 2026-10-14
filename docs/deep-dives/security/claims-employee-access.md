@@ -30,7 +30,7 @@ No throughput or availability target has been established. The design explains s
 
 ## Selected architecture
 
-![Employee claims access architecture](../../assets/diagrams/security/claims-employee-access-architecture.png)
+![Employee claims access architecture](../../assets/images/security/claims-employee-access-architecture.png)
 
 | Component | Owns |
 | --- | --- |

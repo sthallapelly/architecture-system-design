@@ -17,7 +17,7 @@ The [authorization models](runtime-authorization-models.md) define what access m
 
 These are **logical roles**, not a requirement to deploy four services. One component may perform several roles.
 
-![Policy administration, evaluation, and service enforcement](images/policy-enforcement-architecture.png)
+![Policy administration, evaluation, and service enforcement](../assets/images/security/policy-enforcement-architecture.png)
 
 **The API remains responsible for enforcement.** An external allow result must not bypass resource-state checks, required conditions, or the final transaction boundary.
 
@@ -64,7 +64,7 @@ Authenticate remote callers, authorize access to the appropriate policy/store, a
 
 ## Follow evaluation through commit
 
-![Payment authorization evaluation and conditional commit](images/policy-decision-request-flow.png)
+![Payment authorization evaluation and conditional commit](../assets/images/security/policy-decision-request-flow.png)
 
 The API gathers trusted facts, obtains a decision, and commits only while its required conditions hold. **A remote allow result is not a database lock.** Payment state, version, or account rights can change between evaluation and use.
 

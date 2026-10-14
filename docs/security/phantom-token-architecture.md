@@ -8,7 +8,7 @@ For the claims platform, this is an optional token-exposure decision. Partner cl
 
 ## Establish the two token boundaries
 
-![Phantom Token architecture and trust boundaries](images/phantom-token-architecture.png)
+![Phantom Token architecture and trust boundaries](../assets/images/security/phantom-token-architecture.png)
 
 | Boundary | Credential | Responsibility |
 |---|---|---|
@@ -45,7 +45,7 @@ Do not invent a gateway-issued JWT merely because the provider returns JSON intr
 
 ## Follow the request through the boundary
 
-![Phantom Token resolution request flow](images/phantom-token-request-flow.png)
+![Phantom Token resolution request flow](../assets/images/security/phantom-token-request-flow.png)
 
 1. **Client obtains an opaque access token** through its existing grant: Authorization Code for the employee BFF or Client Credentials for a partner workload.
 2. **Gateway receives the API request** and selects the configured issuer and target API. Token contents or caller-supplied URLs must not choose an arbitrary introspection endpoint.

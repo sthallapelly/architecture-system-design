@@ -24,7 +24,7 @@ Assume the following illustrative requirements. They are design constraints for 
 
 The first design choice is to stop treating RAG as one pipeline. There are three interacting systems: **knowledge ingestion**, **query-time retrieval and generation**, and **security/governance/operations** across both.
 
-![Logical boundaries of an enterprise RAG system](../../assets/images/enterprise-rag-logical-architecture.png)
+![Logical boundaries of an enterprise RAG system](../../assets/images/ai/enterprise-rag-logical-architecture.png)
 
 ## 1. Knowledge ingestion is a versioned data-processing system
 
@@ -75,7 +75,7 @@ A production retrieval path may combine:
 5. A more precise reranker over the candidate set.
 6. Final evidence selection and context assembly.
 
-![Hybrid retrieval and evidence assembly](../../assets/images/enterprise-rag-retrieval.png)
+![Hybrid retrieval and evidence assembly](../../assets/images/ai/enterprise-rag-retrieval.png)
 
 **Fusion and reranking solve different problems.** Fusion combines results from retrieval methods whose raw scores may not be comparable. Reranking judges the relevance of candidate passages to the specific question. Retrieval Top-K and final context Top-K are separate parameters: the system might collect dozens of candidates but supply only a small, carefully selected evidence set to the model.
 
@@ -109,7 +109,7 @@ A layered approach can include coarse physical isolation for sensitive tenants o
 
 **Stale access control is more dangerous than stale knowledge.** If a document's ACL changes while ingestion is backlogged, an old index filter may still permit it. Treat revocation propagation as a separate security SLO rather than relying on the content-freshness pipeline.
 
-![Authorization and revocation boundaries](../../assets/images/enterprise-rag-authorization.png)
+![Authorization and revocation boundaries](../../assets/images/ai/enterprise-rag-authorization.png)
 
 A fast revocation control plane can deny access before physical vector deletion finishes. Runtime checks should be synchronous for interactive requests, while ACL change propagation can be asynchronous provided it meets the revocation deadline. Batch checks by distinct document where possible; avoid a network call per chunk.
 
@@ -142,7 +142,7 @@ A practical AWS starting point is **Amazon Bedrock Knowledge Bases** for support
 
 For change orchestration, EventBridge, SQS, Lambda, or Step Functions may connect enterprise change notifications to supported knowledge-base synchronization or direct ingestion APIs. DynamoDB can support a separate document revocation/access-state control plane, while IAM restricts direct access to knowledge-base and retrieval APIs. CloudWatch and application tracing provide operational evidence.
 
-![Illustrative AWS enterprise RAG deployment](../../assets/images/enterprise-rag-aws-reference.png)
+![Illustrative AWS enterprise RAG deployment](../../assets/images/ai/enterprise-rag-aws-reference.png)
 
 This is a **reference design**, not a claim that a particular Bedrock Knowledge Base configuration automatically satisfies atomic document activation, five-minute ACL revocation, or all custom ranking requirements. Exact features differ by knowledge-base type, data source, vector store, and API; validate current service behavior before selecting the configuration.
 

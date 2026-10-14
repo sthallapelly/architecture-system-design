@@ -30,7 +30,7 @@ The example is a **claims payment system** with a browser-based single-page appl
 
 Application entitlements define business-unit access, funding-account rights, and approval limits. A partner application and settlement workload extend the model with API access without an interactive employee. Their authority is assigned separately from employee permissions.
 
-![Application and API security setup](images/application-api-security-setup.png)
+![Application and API security setup](../assets/images/security/application-api-security-setup.png)
 
 The diagram shows **direct SPA access as the starting model**. The browser architecture topic compares that model with backend-based token handling. All architectures and limits in this example are proposed design choices; implementation evidence is recorded separately.
 

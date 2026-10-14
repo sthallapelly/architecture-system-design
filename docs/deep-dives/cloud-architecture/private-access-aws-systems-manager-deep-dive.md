@@ -23,7 +23,7 @@ For example, an EC2 instance can communicate with Systems Manager through interf
 
 That distinction matters when a requirement says that administrative access must remain on private enterprise and AWS networks.
 
-![Independent private Systems Manager paths: the enterprise administrator connects through VPN or Direct Connect to interface VPC endpoints, while EC2 SSM Agent initiates outbound HTTPS on port 443 to those endpoints. Enterprise DNS forwards queries separately to a Route 53 Resolver inbound endpoint.](../../assets/diagrams/ssm/ssm-end-to-end-private-access.svg)
+![Independent private Systems Manager paths: the enterprise administrator connects through VPN or Direct Connect to interface VPC endpoints, while EC2 SSM Agent initiates outbound HTTPS on port 443 to those endpoints. Enterprise DNS forwards queries separately to a Route 53 Resolver inbound endpoint.](../../assets/images/cloud/ssm-end-to-end-private-access.svg)
 
 ## What "private SSM access" can mean
 
@@ -81,7 +81,7 @@ Consider an administrator running `aws ssm start-session`. The command uses AWS 
 
 This remains true even when the managed EC2 instance uses PrivateLink.
 
-![Side-by-side administrator paths: public DNS answers lead through enterprise Internet egress to public Systems Manager endpoints; private endpoint answers lead through VPN or Direct Connect to interface VPC endpoints. The managed node’s endpoint choice does not determine the administrator’s path.](../../assets/diagrams/ssm/ssm-public-vs-private-path.svg)
+![Side-by-side administrator paths: public DNS answers lead through enterprise Internet egress to public Systems Manager endpoints; private endpoint answers lead through VPN or Direct Connect to interface VPC endpoints. The managed node’s endpoint choice does not determine the administrator’s path.](../../assets/images/cloud/ssm-public-vs-private-path.svg)
 
 To make the administrator-side path private, several independent pieces must align:
 
@@ -124,7 +124,7 @@ That creates a question:
 
 One common architecture uses a Route 53 Resolver inbound endpoint. The enterprise DNS infrastructure forwards the relevant queries to the Resolver inbound endpoint, and those DNS queries travel across private connectivity such as Site-to-Site VPN or Direct Connect.
 
-![Enterprise DNS conditionally forwards service-name queries over private connectivity to Route 53 Resolver. VPC private DNS returns interface endpoint private IP addresses through the resolver chain; the client then uses those addresses for HTTPS connectivity.](../../assets/diagrams/ssm/ssm-hybrid-dns.svg)
+![Enterprise DNS conditionally forwards service-name queries over private connectivity to Route 53 Resolver. VPC private DNS returns interface endpoint private IP addresses through the resolver chain; the client then uses those addresses for HTTPS connectivity.](../../assets/images/cloud/ssm-hybrid-dns.svg)
 
 The exact forwarding strategy depends on the organization's DNS architecture. The important point is that **network connectivity and name resolution must be designed together**.
 
@@ -174,7 +174,7 @@ Do not rely only on the fact that a VPC endpoint exists.
 
 Verification should gather evidence from several layers.
 
-![Nine verification stages: DNS resolution, expected endpoint address, route, firewall and security group, endpoint connectivity, AWS authentication, IAM authorization, managed-node and agent state, and successful session. Each stage has supporting evidence; no single check proves private access.](../../assets/diagrams/ssm/ssm-private-access-verification.svg)
+![Nine verification stages: DNS resolution, expected endpoint address, route, firewall and security group, endpoint connectivity, AWS authentication, IAM authorization, managed-node and agent state, and successful session. Each stage has supporting evidence; no single check proves private access.](../../assets/images/cloud/ssm-private-access-verification.svg)
 
 ### 1. Verify DNS resolution
 

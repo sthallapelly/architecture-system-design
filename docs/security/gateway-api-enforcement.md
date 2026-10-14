@@ -6,7 +6,7 @@ An approval request can have a valid token and the right scope while exceeding t
 
 ## Divide the responsibilities
 
-![Gateway screening and service-owned authorization](images/gateway-service-boundaries.png)
+![Gateway screening and service-owned authorization](../assets/images/security/gateway-service-boundaries.png)
 
 | Component | Owns | Approval example |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ The claims design forwards the original Payment API token and validates it at bo
 
 ## Follow the approval request
 
-![Approval request through gateway and Payment API](images/gateway-approval-sequence.png)
+![Approval request through gateway and Payment API](../assets/images/security/gateway-approval-sequence.png)
 
 The gateway checks the credential and route capability. The API repeats the checks for its own accepted token, then evaluates current entitlements against the stored payment. Approval commits only against eligible state and the evaluated version.
 

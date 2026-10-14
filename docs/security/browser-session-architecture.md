@@ -6,7 +6,7 @@ The claims application's [starting model](content.md#the-initial-request-flow) i
 
 ## Compare the browser architectures
 
-![Browser token and session architecture options](images/browser-access-options.png)
+![Browser token and session architecture options](../assets/images/security/browser-access-options.png)
 
 | Approach | OAuth client | Browser credential and API path | Trade-off |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ Product labels vary. **A backend returning access tokens to JavaScript is token 
 
 The claims design selects BFF to reduce browser exposure of payment API credentials. Serve the SPA and BFF under the same public origin.
 
-![BFF login and protected API request sequence](images/bff-login-api-sequence.png)
+![BFF login and protected API request sequence](../assets/images/security/bff-login-api-sequence.png)
 
 The BFF uses authorization code + PKCE and authenticates itself to Okta. Bind the login response to its initiating browser session, verify the callback and ID token, and consume the login transaction once.
 

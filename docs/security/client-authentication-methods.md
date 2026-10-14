@@ -6,7 +6,7 @@ The [Client Credentials grant](client-credentials-machine-identity.md) defines t
 
 ## Compare the methods
 
-![Client authentication methods and their token boundary](images/client-authentication-methods.png)
+![Client authentication methods and their token boundary](../assets/images/security/client-authentication-methods.png)
 
 | Method | Evidence presented to the issuer | What stays with the workload | Main dependency |
 | --- | --- | --- | --- |

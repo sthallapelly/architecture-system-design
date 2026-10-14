@@ -6,4 +6,5 @@ site/
 AGENTS.md
 myprompts.md
 docs/contributing/
+docs/assets/diagrams/
 tests/test_external_links.py

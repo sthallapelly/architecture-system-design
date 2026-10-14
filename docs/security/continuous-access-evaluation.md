@@ -35,7 +35,7 @@ Account locking or disabling is also relevant, but do not invent a universal CAE
 
 ## Keep event handling separate from request handling
 
-![Continuous access evaluation architecture](images/continuous-access-architecture.png)
+![Continuous access evaluation architecture](../assets/images/security/continuous-access-architecture.png)
 
 Use a dedicated security-event receiver rather than making every service implement external SSF delivery. The receiver validates events, resolves their targets, and durably updates shared security state. BFFs, gateways, and service policy enforcement points consume that state.
 
@@ -80,7 +80,7 @@ Events may arrive late, out of order, or more than once. Define ordering and rec
 
 ## Measure the revocation window
 
-![Security event propagation and enforcement timeline](images/continuous-access-timeline.png)
+![Security event propagation and enforcement timeline](../assets/images/security/continuous-access-timeline.png)
 
 **Event delivery is asynchronous; it does not guarantee instant termination.** The exposure window includes detection, publication, delivery, processing, state propagation, and any enforcement-cache delay. If an event is lost, recovery behavior determines how long the restriction can remain unknown.
 

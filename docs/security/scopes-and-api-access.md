@@ -8,7 +8,7 @@ For the claims system, initiators create payments, approvers authorize them, and
 
 The client knows which capabilities its workflow needs before it knows who will sign in. After authentication, the authorization server evaluates that request against client and user policy.
 
-![Requested access, granted scopes, and business authority](images/scope-grant-business-authority.png)
+![Requested access, granted scopes, and business authority](../assets/images/security/scope-grant-business-authority.png)
 
 | Decision | Owner | Approval example |
 | --- | --- | --- |

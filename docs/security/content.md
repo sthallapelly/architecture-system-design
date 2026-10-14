@@ -46,7 +46,7 @@ The direct SPA model uses **Authorization Code + PKCE**. Browser code cannot pro
 
 PKCE binds the authorization code exchange to the initiating transaction. It does not turn the SPA into a confidential client.
 
-![Employee authentication and API access sequence](images/identity-access-request-sequence.png)
+![Employee authentication and API access sequence](../assets/images/security/identity-access-request-sequence.png)
 
 The flow has three stages:
 

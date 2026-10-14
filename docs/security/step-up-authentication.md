@@ -40,7 +40,7 @@ Treat missing required evidence as an unmet requirement. Reject invalid timestam
 
 ## Challenge at the API; coordinate at the BFF
 
-![Step-up authentication request flow](images/step-up-request-flow.png)
+![Step-up authentication request flow](../assets/images/security/step-up-request-flow.png)
 
 [RFC 9470](https://www.rfc-editor.org/rfc/rfc9470.html) defines an API challenge using `insufficient_user_authentication`, with `acr_values` and/or `max_age`. The client requests the indicated authentication requirements and retries with a suitable access token.
 
@@ -67,7 +67,7 @@ The browser continues to hold a secure session cookie; the BFF retains tokens. P
 
 ## Fresh tokens versus fresh authentication
 
-![Authentication freshness and token issuance](images/authentication-freshness.png)
+![Authentication freshness and token issuance](../assets/images/security/authentication-freshness.png)
 
 Suppose the user authenticated at 09:00. A refresh at 09:20 produces an access token with a new `iat`, but it does not itself establish a new user authentication event. A sensitive operation requiring authentication within five minutes must still challenge if its trusted evidence refers to 09:00.
 

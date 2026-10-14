@@ -14,7 +14,7 @@ For a claims payment, an approver role is a useful starting point. It does not e
 | Attribute-Based Access Control (ABAC) | Subject, resource, action, and environment attributes | Payment amount is within the subject's limit | Expressive conditions; attribute trust and freshness matter |
 | Relationship-Based Access Control (ReBAC) | Relationships connecting subjects and resources | Subject belongs to a team authorized for the funding account | Natural ownership/inheritance; graph changes and queries add complexity |
 
-![Authorization models and the questions they answer](images/authorization-models-comparison.png)
+![Authorization models and the questions they answer](../assets/images/security/authorization-models-comparison.png)
 
 **Policy-Based Access Control (PBAC)** commonly describes expressing decisions through explicit policies. It is not necessarily another mutually exclusive model: a policy can combine roles, attributes, and relationships. Define the term when selecting a product rather than assuming one universal interpretation.
 
@@ -56,7 +56,7 @@ Missing or unavailable required attributes must not default to permission. Disti
 
 Some rights follow ownership or membership rather than a fixed global role. A subject may be authorized through a team that has an approver relationship to an account. A payment belongs to that account, so its policy can inherit the relevant account relationship.
 
-![Relationship-based access through team and funding account](images/claims-account-relationships.png)
+![Relationship-based access through team and funding account](../assets/images/security/claims-account-relationships.png)
 
 The graph describes facts; the policy defines which relationships confer which actions. **Membership alone does not imply every permission.** A read relationship must not become approval authority merely because both reach the same resource.
 

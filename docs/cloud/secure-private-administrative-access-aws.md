@@ -24,7 +24,7 @@ AWS Systems Manager Session Manager provides controlled access to managed nodes 
 
 At a high level, the pattern looks different from a traditional bastion:
 
-![Traditional administrative access connects through a bastion to a private EC2 workload using SSH or RDP. With Session Manager, the administrator and EC2 SSM Agent initiate separate connections toward Systems Manager; no direct inbound SSH or RDP connection to the managed instance is required.](../assets/diagrams/ssm/administrative-access-patterns.svg)
+![Traditional administrative access connects through a bastion to a private EC2 workload using SSH or RDP. With Session Manager, the administrator and EC2 SSM Agent initiate separate connections toward Systems Manager; no direct inbound SSH or RDP connection to the managed instance is required.](../assets/images/cloud/administrative-access-patterns.svg)
 
 The EC2 instance runs the SSM Agent and is registered as a Systems Manager managed node. The agent initiates outbound connections to Systems Manager, so a normal Session Manager connection does not require an inbound SSH rule on the instance.
 
@@ -36,7 +36,7 @@ That does not make network design irrelevant. The administrator and the managed 
 
 It is useful to think about a Session Manager connection as two related paths.
 
-![Two separate Session Manager connection paths: the administrator initiates a session toward AWS Systems Manager, and the EC2 SSM Agent initiates outbound connectivity toward the service over HTTPS on port 443.](../assets/diagrams/ssm/ssm-session-paths.svg)
+![Two separate Session Manager connection paths: the administrator initiates a session toward AWS Systems Manager, and the EC2 SSM Agent initiates outbound connectivity toward the service over HTTPS on port 443.](../assets/images/cloud/ssm-session-paths.svg)
 
 **Path 1 — Administrator to the AWS service**
 
@@ -76,7 +76,7 @@ AWS PrivateLink interface VPC endpoints can provide private connectivity from th
 
 The pattern becomes:
 
-![Two managed-node connectivity options: EC2 SSM Agent reaches public Systems Manager endpoints through a NAT or Internet-capable outbound path, or reaches the service privately over HTTPS port 443 through interface VPC endpoints powered by AWS PrivateLink.](../assets/diagrams/ssm/ssm-public-vs-private-connectivity.svg)
+![Two managed-node connectivity options: EC2 SSM Agent reaches public Systems Manager endpoints through a NAT or Internet-capable outbound path, or reaches the service privately over HTTPS port 443 through interface VPC endpoints powered by AWS PrivateLink.](../assets/images/cloud/ssm-public-vs-private-connectivity.svg)
 
 With the appropriate interface endpoints and DNS configuration, the managed node can communicate with Systems Manager without requiring an Internet gateway or NAT device for that traffic.
 
@@ -112,7 +112,7 @@ This is useful when an administrator needs access to a private resource that sho
 
 For example:
 
-![Session Manager carries traffic from the administrator laptop at localhost port 3306 to a managed EC2 instance. The client and agent connect toward Systems Manager; EC2 initiates the TCP port 3306 connection to private Amazon RDS, which has no public access.](../assets/diagrams/ssm/ssm-port-forwarding-private-rds.svg)
+![Session Manager carries traffic from the administrator laptop at localhost port 3306 to a managed EC2 instance. The client and agent connect toward Systems Manager; EC2 initiates the TCP port 3306 connection to private Amazon RDS, which has no public access.](../assets/images/cloud/ssm-port-forwarding-private-rds.svg)
 
 The database remains private. The EC2 instance acts as the managed node through which the session reaches the remote host, while normal DNS resolution and network connectivity from that managed node to the database still apply.
 

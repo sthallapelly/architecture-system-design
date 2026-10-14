@@ -19,7 +19,7 @@ A server-side caller does not automatically require Client Credentials. The BFF 
 
 Client Credentials is defined for **confidential clients** in [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749.html#section-4.4). A browser SPA cannot protect the credential needed for this flow.
 
-![Client Credentials token request and resource authorization](images/client-credentials-flow.png)
+![Client Credentials token request and resource authorization](../assets/images/security/client-credentials-flow.png)
 
 1. **Authenticate the client:** the workload calls the token endpoint with its configured authentication and requested scopes.
 2. **Evaluate issuance policy:** the authorization server checks the client's eligibility and issues an access token.
